@@ -1,0 +1,123 @@
+:root {
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+--SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+--LightGrayishMagenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: "Spartan", sans-serif;
+  font-size: var(--fs-default);
+  background-color: var(--clr-white);
+  padding: 2.5rem 1.875rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+  }
+.top-content {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.preview {
+    color: var(--VeryDarkMagenta);
+    padding: 10px;
+}
+h1 {
+    font-size: 3rem;
+}
+
+.preview span{
+    display: block;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.rate-1, .rate-2, .rate-3 .star {
+    color: aqua;
+    font-size: 1500px;
+}
+
+.rate-1, .rate-2, .rate-3 {
+    background-color:var(--LightGrayishMagenta);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 0.5rem;
+    color: var(--VeryDarkMagenta);
+    font-weight: 700;
+    width: 450px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate-1{
+    margin-right: 80px;
+}
+
+.rate-2{
+    margin-right: 40px;
+}
+
+
+.bottom-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buyer-1, .buyer-2, .buyer-3{
+    color: var(--White);
+    background-color: var(--VeryDarkMagenta);
+    padding: 25px;
+    max-width: 340px;
+    margin: 25px;
+    display: grid;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+img {
+    border-radius: 50px;
+}
+
+.name {
+    line-height: 1.5rem;
+    color: rgb(212, 209, 209);
+    font-weight: 700;
+    position: relative;
+    right:85px;
+}
+
+ p span {
+    color:#a0436d;
+}
+
+.buyer-2 {
+    position: relative;
+    top: 30px;
+}
+
+.buyer-3 {
+    position: relative;
+    top: 50px;
+}
+
+.feedback {
+    grid-column: span 2;
+    margin-top: 20px;
+    color: rgb(202, 202, 202);
+}
